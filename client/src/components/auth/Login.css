@@ -1,0 +1,81 @@
+/* Login.css */
+
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .auth {
+    width: 500px;
+    padding: 20px;
+    background-color: #000; /* Change background color to black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-height: 500px;
+  }
+  
+  .auth-header {
+    text-align: center;
+  }
+  
+  .large {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff; /* Change label color to white */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .mt-3 {
+    margin-top: 1.5rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem; /* Adjusted height here */
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  /* Add any additional styling as needed */
+  

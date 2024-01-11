@@ -1,0 +1,125 @@
+/* sidebar.css */
+
+/* Basic styling for sidebar */
+.sidebar {
+  width: 300px;     /* Increased width */
+  min-height: 120%;
+  position:absolute;
+  margin-top: 1px;        
+  left: 0;
+  background-color: #fff;  /* White background */
+  color: #000;      /* Black text color */
+  padding-top: 22px;
+  overflow-y:scroll;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Optional: Add a box shadow for a subtle lift */
+}
+
+/* Styling for sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;  /* Black text color */
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for dashboard icon */
+.sidebar i {
+  margin-right: 5px;
+}
+
+/* Active link styling */
+.sidebar a.active {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background-color: #eee;  /* Light gray background on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* Content container */
+.content {
+  margin-left: 280px; /* Adjusted margin to match the increased width of the sidebar */
+  padding: 16px;
+}
+
+/* dashboard.css */
+
+.custom-stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom:1rem ;
+  padding-top:5rem;
+  padding-left: 1.1rem;
+}
+
+.custom-stat-box {
+  background-color: #edf2f7; /* Default background color */
+  border: 2px solid #e2e8f0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions for background color and transform */
+}
+
+/* Different background colors for each box */
+.custom-stat-box:nth-child(1) {
+  background-color: #63b3ed;
+}
+
+.custom-stat-box:nth-child(2) {
+  background-color: #81e6d9;
+}
+
+.custom-stat-box:nth-child(3) {
+  background-color: #f6ad55;
+}
+
+.custom-stat-box:nth-child(4) {
+  background-color: #a0aec0;
+}
+
+.custom-stat-heading {
+  font-size: 1rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.custom-stat-icon {
+  font-size: 2rem;
+  color: #4a5568;
+}
+
+.custom-stat-count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Animation on hover */
+.custom-stat-box:hover {
+  background-color: #cbd5e0; /* Change background color on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
